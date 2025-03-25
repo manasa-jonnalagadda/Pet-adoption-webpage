@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="webcla_files/bootstrap.min.css">
+    <link rel="stylesheet" href="webcla_files/all.min.css">
+    <style>
+        body {
+            background: url('https://media.istockphoto.com/id/1417882544/photo/large-group-of-cats-and-dogs-looking-at-the-camera-on-blue-background.jpg?s=612x612&w=0&k=20&c=kGKANSIFdNfhBJMipyuaKU4BcVE1oELWev9lF2ickE0=') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background: rgba(255, 204, 203, 0.9);
+        }
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: black !important;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        h2, h3 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6f61;
+        }
+        .btn {
+            background-color: #ff9a8b;
+            color: black;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #ff6f61;
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        /* Form styling */
+        #adoption-form, #contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-label {
+            font-weight: 600;
+        }
+        .form-control, .form-select {
+            margin-bottom: 15px;
+        }
+        .terms-check {
+            margin: 20px 0;
+        }
+        .contact-info {
+            background: rgba(255, 154, 139, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgba(255, 204, 203, 0.9);
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Pet Adoption</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adoption">Adoption Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container mt-5 text-center">
+        <h1>Welcome to Pet Adoption Center</h1>
+        <p class="lead">Find your perfect furry companion and give them a forever home</p>
+    </section>
+
+    <section id="about" class="container mt-5 text-center">
+        <h2>About Us</h2>
+        <p>Welcome to Pet Adoption, your trusted source for finding 
+loving homes for pets in need. We are dedicated to matching rescued 
+animals with compassionate families. Our mission is to provide a safe, 
+nurturing environment for pets while they await their forever homes.</p>
+    </section>
+
+    <section id="pets" class="container mt-5">
+        <h2 class="text-center">Available Pets</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webcla_files/labrador-retriever-1210559_1280.jpg" class="card-img-top" alt="Labrador Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Max</h5>
+                        <p class="card-text">Breed: Labrador, Age: 4 years</p>
+                        <a href="#adoption" class="btn">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webcla_files/images.jpg" class="card-img-top" alt="Beagle Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Bella</h5>
+                        <p class="card-text">Breed: Beagle, Age: 3 years</p>
+                        <a href="#adoption" class="btn">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webcla_files/istockphoto-1076432222-612x612.jpg" class="card-img-top" alt="Siamese Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <p class="card-text">Breed: Siamese, Age: 2 years</p>
+                        <a href="#adoption" class="btn">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webcla_files/photo-1592194996308-7b43878e84a6.avif" class="card-img-top" alt="Persian Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Oliver</h5>
+                        <p class="card-text">Breed: Persian, Age: 5 years</p>
+                        <a href="#adoption" class="btn">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="webcla_files/American_Grand_Champion_Dutch_Rabbit.jpg" class="card-img-top" alt="Dutch Rabbit">
+                    <div class="card-body">
+                        <h5 class="card-title">Coco</h5>
+                        <p class="card-text">Breed: Dutch Rabbit, Age: 1 year</p>
+                        <a href="#adoption" class="btn">Adopt Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="adoption" class="container mt-5">
+        <h2 class="text-center mb-4">Adoption Request Form</h2>
+        <form id="adoption-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="pet" class="form-label">Preferred Pet</label>
+                        <select class="form-select" id="pet" required="">
+                            <option value="" selected="selected" disabled="disabled">Select a pet</option>
+                            <option value="Max (Labrador)">Max (Labrador)</option>
+                            <option value="Bella (Beagle)">Bella (Beagle)</option>
+                            <option value="Luna (Siamese)">Luna (Siamese)</option>
+                            <option value="Oliver (Persian)">Oliver (Persian)</option>
+                            <option value="Coco (Dutch Rabbit)">Coco (Dutch Rabbit)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="reason" class="form-label">Why do you want to adopt?</label>
+                <textarea class="form-control" id="reason" rows="3" required=""></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Do you have experience with pets?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="experience" id="experienceYes" value="Yes" required="">
+                    <label class="form-check-label" for="experienceYes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="experience" id="experienceNo" value="No">
+                    <label class="form-check-label" for="experienceNo">No</label>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="living" class="form-label">Living Situation</label>
+                <select class="form-select" id="living" required="">
+                    <option value="" selected="selected" disabled="disabled">Select your living situation</option>
+                    <option value="House with garden">House with garden</option>
+                    <option value="House without garden">House without garden</option>
+                    <option value="Apartment with balcony">Apartment with balcony</option>
+                    <option value="Apartment without balcony">Apartment without balcony</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="terms-check mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terms" required="">
+                    <label class="form-check-label" for="terms">
+                        I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a> of pet adoption
+                    </label>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg">Submit Adoption Request</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form id="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="contactName" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="contactEmail" required="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="contactMessage" rows="5" required=""></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Adoption Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Adoption Agreement</h6>
+                    <p>By adopting a pet through our organization, you agree to provide a loving, safe, and permanent home for the animal.</p>
+                    
+                    <h6>Care Requirements</h6>
+                    <p>You must provide proper food, water, shelter, veterinary care, and companionship for your adopted pet.</p>
+                    
+                    <h6>Home Check</h6>
+                    <p>We reserve the right to conduct home visits before and after adoption to ensure the pet's welfare.</p>
+                    
+                    <h6>Return Policy</h6>
+                    <p>If you can no longer care for your adopted pet, you must return them to our organization rather than rehoming them yourself.</p>
+                    
+                    <h6>Legal Ownership</h6>
+                    <p>Ownership of the pet will be transferred only after the adoption fee is paid in full and all paperwork is completed.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">I Understand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Our Location</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Telecom Nagar, Gachibowli, Hyderabad</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-envelope"></i> petshome@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 9785425675</p>
+                </div>
+            </div>
+            <hr>
+            <p>© 2023 Pet Adoption Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="webcla_files/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('adoption-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your adoption request! We will contact you shortly.');
+            this.reset();
+        });
+        
+        // Contact form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+
+ add one more pet like parret to available pets</body></html>
