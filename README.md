@@ -19,13 +19,9 @@ Menu items: Home, About Us, Adoption Form, Contact Us.
 Displays a grid of pet cards using Bootstrap.
 
 Each pet card includes:
-
 Image
-
 Name, breed, and age details
-
 "Adopt Me" button linking to the adoption form.
-
 New Pet Added: A Parrot added to the pet list.
 
 5. Adoption Request Form
@@ -34,30 +30,21 @@ Users can submit a request to adopt a pet.
 Fields include:
 
 Full Name, Email, Phone Number
-
 Preferred Pet
-
 Reason for adoption
-
-Living situation
-
+iving situation
 Experience with pets
-
 Terms and Conditions Agreement
-
 Modal for Terms and Conditions ensures users understand adoption policies.
 
 6. Contact Form
 Users can send inquiries via a simple contact form.
-
 Includes name, email, and message fields.
 
 7. Footer Section
 Displays contact information and location.
-
 Icons for phone and email using Font Awesome.
 
 8. JavaScript Enhancements
 Form submission alerts notify users when they submit the adoption or contact form.
-
 Prevents default form submission and resets fields after completion.
